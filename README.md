@@ -17,7 +17,9 @@ it, simply add the following line to your Podfile:
 pod 'jieba'
 ```
 
-pod lib lint --allow-warnings --use-libraries
+`在类中导入头文件，#import "WBJieba.h"，并且将类 .m 后缀改成 .mm `
+
+`pod lib lint --allow-warnings --use-libraries`
 
 ## Author
 
