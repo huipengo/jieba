@@ -1,0 +1,565 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0AA4C93403B2ED14223CE5F307A67377 /* Logger.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 3E06853C76DC4E0514424DE39B6A5C83 /* Logger.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		149543D751BD3F191CE8F8ED0BF676E3 /* Segmentor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E355AE3BA1D1370AC38339F9050DBAE3 /* Segmentor.cpp */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		1ECBDFCB190E0CBAA72C5E27416B8E05 /* QuerySegment.hpp in Headers */ = {isa = PBXBuildFile; fileRef = A9AE1774E2792FCEA61637C8A20C5EEA /* QuerySegment.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		38016501727AC321AE1912B73A1CF913 /* PosTagger.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C7FF00C962F8997C6688A4F6CC685F4E /* PosTagger.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		40EB37DA1B140461805EE03BDE35D416 /* StringUtil.hpp in Headers */ = {isa = PBXBuildFile; fileRef = A2BA974B11C04A260314838E983FD2F9 /* StringUtil.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C4898148CB9C1EB4122CC2D79F80391 /* WBJieba.mm in Sources */ = {isa = PBXBuildFile; fileRef = CE1BC79D1062AB28D8DF7BA338EB8A40 /* WBJieba.mm */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		5019E315480CFF542AF100F4E3D54658 /* jieba-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 52DF15B6E705DE8FACC987F63F6CFD10 /* jieba-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		53B15950656E1E81DF521DADB39EFF8D /* iosjieba.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A672079327B3B5A17844BB2BB28F258B /* iosjieba.bundle */; };
+		54D7A8805B593BC81B9951DFEE400BAA /* KeywordExtractor.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C82F72D2CF31091DEDB0D5C51B8765FD /* KeywordExtractor.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F0AF03703C05C7A8A320A788D01F709 /* FullSegment.hpp in Headers */ = {isa = PBXBuildFile; fileRef = F1EE1159B6E68BE6CBFEDCEBA06037FD /* FullSegment.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		629448FB9804ADAF732E01133D834F55 /* MutexLock.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 59C8C11C39F79483DD3C2BF580D0B517 /* MutexLock.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		63AE53A917DB9011D272C62DD972238C /* Trie.hpp in Headers */ = {isa = PBXBuildFile; fileRef = CBB15311AFCE0B33DD637313339CAB24 /* Trie.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		640CCEBAFD999ED62F1B5D13B1F3C2F3 /* MixSegment.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 86C07E9D51AA128E2754CF15AC7A1C70 /* MixSegment.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		6642845FE05D213BFFD3E8AC3A1F41F6 /* Config.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 1618617ED9B951AF5F5D6708CF9BF1F5 /* Config.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		67BEC1E2A9F4852666C4488C1AD241AC /* Segmentor.h in Headers */ = {isa = PBXBuildFile; fileRef = 2169EE081B81008169483838DB6D0F9C /* Segmentor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6C416C5E2491B003F50872994B78A36E /* ArgvContext.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 321D3800AAEB8A7A021E456FC60AC35C /* ArgvContext.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		88081116897CAC58998EF5F82D8A8622 /* StdExtension.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B2606254FCB5C52A12313CC2DC99B67D /* StdExtension.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		929A8A354E378317C5D67980A3360383 /* BoundedQueue.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 11D709054C62F0EC5CBFFC785EAABB84 /* BoundedQueue.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		94AD3758A1DE523387308E6B33262236 /* MPSegment.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 5D247425E743A85CFF37E87A1B6CB625 /* MPSegment.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AAC4AA9333B19140683745F3A0E8618 /* ThreadPool.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B6C5634E0F9E0BCA61C0DBEEB999D913 /* ThreadPool.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		A3BB399E67DF49D86570262076689187 /* HandyMacro.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 004252A0738B25BB88648FCA18801A58 /* HandyMacro.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		A5ABAC8B749A7EB8CFB2A018F0639213 /* DictTrie.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C87CDC19960861BF401ED984F92C696D /* DictTrie.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		ABB5CC90AE81E76DDE3B1CAAFF51E268 /* WBJieba.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DD54055B3D086CB45C5031D7026F71D /* WBJieba.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ADC3FA6354246943644C01CF4646567A /* SegmentBase.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 486B0DFD226724040598B7CC4A6F597B /* SegmentBase.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		B3E29362A3FDAFF1A4220FEF39FD9DB6 /* Condition.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 01F18DDFC91519DCEEBF2B86F7F0FC61 /* Condition.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6F22F367F104008FA39913A049288B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E3A3241BC2DF0A4601313D796524FEE /* Foundation.framework */; };
+		C3D4B96B2FD720C89E827C022FDE89E5 /* NonCopyable.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 62132795E96729206E03B78C05B5C907 /* NonCopyable.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF8C16CD1A2EF47742D1C56FC5EF5194 /* CastFloat.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 324A1A2DD090201BB412D41B0C0CC66A /* CastFloat.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		CFAA327AE6F71BC1E208082EF012F79D /* Thread.hpp in Headers */ = {isa = PBXBuildFile; fileRef = DA6DDDF875B3D0D01E905B3578B10862 /* Thread.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		D325515B55CF70D20DCEA44A4AE6036E /* HMMSegment.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B5455E46AA0514A8664FE03560DE361E /* HMMSegment.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3426C2EEFB6B7B57AB21AF39B1D5025 /* BlockingQueue.hpp in Headers */ = {isa = PBXBuildFile; fileRef = DF20D1914A48326627768E2CFD2C2DB1 /* BlockingQueue.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		D8538B3293F5C5E429A68423126B69BC /* LocalVector.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 3C97C7668C081964BB81B10ECA2209AE /* LocalVector.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD832164B0205E7CA02DC689CCBE04D8 /* ISegment.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2D52BB9B654819B5C990912208494F12 /* ISegment.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4B9DE3859C358E33714229E0385E6AF /* InitOnOff.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 254E014460952FF5DB1E8D225ED17EAC /* InitOnOff.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		E67A4273C88CCB921EB115A5ADE63F31 /* TransCode.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B18C00BF3513EC69911138D5FD59D6DA /* TransCode.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		E943656AAB662DA56E4B09C4AA5F90F1 /* jieba-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE5D746026DA7C0D9CB2D8E3A09CA36 /* jieba-dummy.m */; };
+		F0615E74D0C13E27C7D6BEFE255D4E30 /* MysqlClient.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 5D0369AA996FAD3D1BD7EE4E60C1A8C0 /* MysqlClient.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		FCE4845622E9D3F67E389E5038008467 /* Md5.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C4C46EA4B2F272482EB823B2504BD39A /* Md5.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		004252A0738B25BB88648FCA18801A58 /* HandyMacro.hpp */ = {isa = PBXFileReference; includeInIndex = 1; path = HandyMacro.hpp; sourceTree = "<group>"; };
+		01F18DDFC91519DCEEBF2B86F7F0FC61 /* Condition.hpp */ = {isa = PBXFileReference; includeInIndex = 1; path = Condition.hpp; sourceTree = "<group>"; };
+		11D709054C62F0EC5CBFFC785EAABB84 /* BoundedQueue.hpp */ = {isa = PBXFileReference; includeInIndex = 1; path = BoundedQueue.hpp; sourceTree = "<group>"; };
+		1618617ED9B951AF5F5D6708CF9BF1F5 /* Config.hpp */ = {isa = PBXFileReference; includeInIndex = 1; path = Config.hpp; sourceTree = "<group>"; };
+		1E3A3241BC2DF0A4601313D796524FEE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		2169EE081B81008169483838DB6D0F9C /* Segmentor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Segmentor.h; path = Pod/Classes/Segmentor.h; sourceTree = "<group>"; };
+		254E014460952FF5DB1E8D225ED17EAC /* InitOnOff.hpp */ = {isa = PBXFileReference; includeInIndex = 1; path = InitOnOff.hpp; sourceTree = "<group>"; };
+		2D52BB9B654819B5C990912208494F12 /* ISegment.hpp */ = {isa = PBXFileReference; includeInIndex = 1; path = ISegment.hpp; sourceTree = "<group>"; };
+		2EE5D746026DA7C0D9CB2D8E3A09CA36 /* jieba-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "jieba-dummy.m"; sourceTree = "<group>"; };
+		321D3800AAEB8A7A021E456FC60AC35C /* ArgvContext.hpp */ = {isa = PBXFileReference; includeInIndex = 1; path = ArgvContext.hpp; sourceTree = "<group>"; };
+		324A1A2DD090201BB412D41B0C0CC66A /* CastFloat.hpp */ = {isa = PBXFileReference; includeInIndex = 1; path = CastFloat.hpp; sourceTree = "<group>"; };
+		3C97C7668C081964BB81B10ECA2209AE /* LocalVector.hpp */ = {isa = PBXFileReference; includeInIndex = 1; path = LocalVector.hpp; sourceTree = "<group>"; };
+		3E06853C76DC4E0514424DE39B6A5C83 /* Logger.hpp */ = {isa = PBXFileReference; includeInIndex = 1; path = Logger.hpp; sourceTree = "<group>"; };
+		42B9A797319C43EAFC0448FE383EA418 /* jieba.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = jieba.modulemap; sourceTree = "<group>"; };
+		486B0DFD226724040598B7CC4A6F597B /* SegmentBase.hpp */ = {isa = PBXFileReference; includeInIndex = 1; path = SegmentBase.hpp; sourceTree = "<group>"; };
+		5161DC2FAD304BDFFD68A96BB6E01DF9 /* jieba-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "jieba-prefix.pch"; sourceTree = "<group>"; };
+		52DF15B6E705DE8FACC987F63F6CFD10 /* jieba-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "jieba-umbrella.h"; sourceTree = "<group>"; };
+		59C8C11C39F79483DD3C2BF580D0B517 /* MutexLock.hpp */ = {isa = PBXFileReference; includeInIndex = 1; path = MutexLock.hpp; sourceTree = "<group>"; };
+		5D0369AA996FAD3D1BD7EE4E60C1A8C0 /* MysqlClient.hpp */ = {isa = PBXFileReference; includeInIndex = 1; path = MysqlClient.hpp; sourceTree = "<group>"; };
+		5D247425E743A85CFF37E87A1B6CB625 /* MPSegment.hpp */ = {isa = PBXFileReference; includeInIndex = 1; path = MPSegment.hpp; sourceTree = "<group>"; };
+		5E8672164FD76E6424CB6E1FFE8E0BAE /* jieba.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = jieba.framework; path = jieba.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62132795E96729206E03B78C05B5C907 /* NonCopyable.hpp */ = {isa = PBXFileReference; includeInIndex = 1; path = NonCopyable.hpp; sourceTree = "<group>"; };
+		63E8765558544D43BC0A04D6B13C124A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		7A4A4E38E630FE5D691BE7E70FA1C1DB /* jieba.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = jieba.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		86C07E9D51AA128E2754CF15AC7A1C70 /* MixSegment.hpp */ = {isa = PBXFileReference; includeInIndex = 1; path = MixSegment.hpp; sourceTree = "<group>"; };
+		8DD54055B3D086CB45C5031D7026F71D /* WBJieba.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WBJieba.h; path = Pod/Classes/WBJieba.h; sourceTree = "<group>"; };
+		A2BA974B11C04A260314838E983FD2F9 /* StringUtil.hpp */ = {isa = PBXFileReference; includeInIndex = 1; path = StringUtil.hpp; sourceTree = "<group>"; };
+		A52326D8D04D0DBDB1B1E1C4F8180D3C /* jieba.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = jieba.xcconfig; sourceTree = "<group>"; };
+		A672079327B3B5A17844BB2BB28F258B /* iosjieba.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = iosjieba.bundle; path = Pod/Classes/iosjieba.bundle; sourceTree = "<group>"; };
+		A9AE1774E2792FCEA61637C8A20C5EEA /* QuerySegment.hpp */ = {isa = PBXFileReference; includeInIndex = 1; path = QuerySegment.hpp; sourceTree = "<group>"; };
+		B18C00BF3513EC69911138D5FD59D6DA /* TransCode.hpp */ = {isa = PBXFileReference; includeInIndex = 1; path = TransCode.hpp; sourceTree = "<group>"; };
+		B2606254FCB5C52A12313CC2DC99B67D /* StdExtension.hpp */ = {isa = PBXFileReference; includeInIndex = 1; path = StdExtension.hpp; sourceTree = "<group>"; };
+		B5455E46AA0514A8664FE03560DE361E /* HMMSegment.hpp */ = {isa = PBXFileReference; includeInIndex = 1; path = HMMSegment.hpp; sourceTree = "<group>"; };
+		B6C5634E0F9E0BCA61C0DBEEB999D913 /* ThreadPool.hpp */ = {isa = PBXFileReference; includeInIndex = 1; path = ThreadPool.hpp; sourceTree = "<group>"; };
+		BD500807B5AD84E39AAAA9516E0D7DAE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		C4C46EA4B2F272482EB823B2504BD39A /* Md5.hpp */ = {isa = PBXFileReference; includeInIndex = 1; path = Md5.hpp; sourceTree = "<group>"; };
+		C7FF00C962F8997C6688A4F6CC685F4E /* PosTagger.hpp */ = {isa = PBXFileReference; includeInIndex = 1; path = PosTagger.hpp; sourceTree = "<group>"; };
+		C82F72D2CF31091DEDB0D5C51B8765FD /* KeywordExtractor.hpp */ = {isa = PBXFileReference; includeInIndex = 1; path = KeywordExtractor.hpp; sourceTree = "<group>"; };
+		C87CDC19960861BF401ED984F92C696D /* DictTrie.hpp */ = {isa = PBXFileReference; includeInIndex = 1; path = DictTrie.hpp; sourceTree = "<group>"; };
+		CBB15311AFCE0B33DD637313339CAB24 /* Trie.hpp */ = {isa = PBXFileReference; includeInIndex = 1; path = Trie.hpp; sourceTree = "<group>"; };
+		CDCFCB1A9EBEEDFB1143DE46E0A6528D /* jieba-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "jieba-Info.plist"; sourceTree = "<group>"; };
+		CE1BC79D1062AB28D8DF7BA338EB8A40 /* WBJieba.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = WBJieba.mm; path = Pod/Classes/WBJieba.mm; sourceTree = "<group>"; };
+		DA6DDDF875B3D0D01E905B3578B10862 /* Thread.hpp */ = {isa = PBXFileReference; includeInIndex = 1; path = Thread.hpp; sourceTree = "<group>"; };
+		DF20D1914A48326627768E2CFD2C2DB1 /* BlockingQueue.hpp */ = {isa = PBXFileReference; includeInIndex = 1; path = BlockingQueue.hpp; sourceTree = "<group>"; };
+		E355AE3BA1D1370AC38339F9050DBAE3 /* Segmentor.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = Segmentor.cpp; path = Pod/Classes/Segmentor.cpp; sourceTree = "<group>"; };
+		F1EE1159B6E68BE6CBFEDCEBA06037FD /* FullSegment.hpp */ = {isa = PBXFileReference; includeInIndex = 1; path = FullSegment.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		77C95CB45493FDFFC63F16BA8AE664C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6F22F367F104008FA39913A049288B6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0948ED2133C98E6C7ED990298380164D /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				1E3A3241BC2DF0A4601313D796524FEE /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		1321FD01119D2255333F54C3FA507800 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0948ED2133C98E6C7ED990298380164D /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		18D4A21BD47AAA731A16336669766D5A /* Limonp */ = {
+			isa = PBXGroup;
+			children = (
+				321D3800AAEB8A7A021E456FC60AC35C /* ArgvContext.hpp */,
+				DF20D1914A48326627768E2CFD2C2DB1 /* BlockingQueue.hpp */,
+				11D709054C62F0EC5CBFFC785EAABB84 /* BoundedQueue.hpp */,
+				324A1A2DD090201BB412D41B0C0CC66A /* CastFloat.hpp */,
+				01F18DDFC91519DCEEBF2B86F7F0FC61 /* Condition.hpp */,
+				1618617ED9B951AF5F5D6708CF9BF1F5 /* Config.hpp */,
+				004252A0738B25BB88648FCA18801A58 /* HandyMacro.hpp */,
+				254E014460952FF5DB1E8D225ED17EAC /* InitOnOff.hpp */,
+				3C97C7668C081964BB81B10ECA2209AE /* LocalVector.hpp */,
+				3E06853C76DC4E0514424DE39B6A5C83 /* Logger.hpp */,
+				C4C46EA4B2F272482EB823B2504BD39A /* Md5.hpp */,
+				59C8C11C39F79483DD3C2BF580D0B517 /* MutexLock.hpp */,
+				5D0369AA996FAD3D1BD7EE4E60C1A8C0 /* MysqlClient.hpp */,
+				62132795E96729206E03B78C05B5C907 /* NonCopyable.hpp */,
+				B2606254FCB5C52A12313CC2DC99B67D /* StdExtension.hpp */,
+				A2BA974B11C04A260314838E983FD2F9 /* StringUtil.hpp */,
+				DA6DDDF875B3D0D01E905B3578B10862 /* Thread.hpp */,
+				B6C5634E0F9E0BCA61C0DBEEB999D913 /* ThreadPool.hpp */,
+			);
+			name = Limonp;
+			path = Limonp;
+			sourceTree = "<group>";
+		};
+		1A7623B648CC5916B52C1D09EF84968A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5E8672164FD76E6424CB6E1FFE8E0BAE /* jieba.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3954A6CF5F4EC8961B159EBBF6FF56B0 /* jieba */ = {
+			isa = PBXGroup;
+			children = (
+				E355AE3BA1D1370AC38339F9050DBAE3 /* Segmentor.cpp */,
+				2169EE081B81008169483838DB6D0F9C /* Segmentor.h */,
+				8DD54055B3D086CB45C5031D7026F71D /* WBJieba.h */,
+				CE1BC79D1062AB28D8DF7BA338EB8A40 /* WBJieba.mm */,
+				A0A6B11FB880E03ED0BE466EF2C81FB4 /* CppJieba */,
+				C35C21B611EEA8DC6B614190CB47E4DF /* Pod */,
+				7907E2E8462E198D76C55B8244C38B85 /* Resources */,
+				BC93F0348C940B468FC670A1E854E6E0 /* Support Files */,
+			);
+			name = jieba;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		7907E2E8462E198D76C55B8244C38B85 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A672079327B3B5A17844BB2BB28F258B /* iosjieba.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A0A6B11FB880E03ED0BE466EF2C81FB4 /* CppJieba */ = {
+			isa = PBXGroup;
+			children = (
+				C87CDC19960861BF401ED984F92C696D /* DictTrie.hpp */,
+				F1EE1159B6E68BE6CBFEDCEBA06037FD /* FullSegment.hpp */,
+				B5455E46AA0514A8664FE03560DE361E /* HMMSegment.hpp */,
+				2D52BB9B654819B5C990912208494F12 /* ISegment.hpp */,
+				C82F72D2CF31091DEDB0D5C51B8765FD /* KeywordExtractor.hpp */,
+				86C07E9D51AA128E2754CF15AC7A1C70 /* MixSegment.hpp */,
+				5D247425E743A85CFF37E87A1B6CB625 /* MPSegment.hpp */,
+				C7FF00C962F8997C6688A4F6CC685F4E /* PosTagger.hpp */,
+				A9AE1774E2792FCEA61637C8A20C5EEA /* QuerySegment.hpp */,
+				486B0DFD226724040598B7CC4A6F597B /* SegmentBase.hpp */,
+				B18C00BF3513EC69911138D5FD59D6DA /* TransCode.hpp */,
+				CBB15311AFCE0B33DD637313339CAB24 /* Trie.hpp */,
+				18D4A21BD47AAA731A16336669766D5A /* Limonp */,
+			);
+			name = CppJieba;
+			path = Pod/Classes/CppJieba;
+			sourceTree = "<group>";
+		};
+		BC93F0348C940B468FC670A1E854E6E0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				42B9A797319C43EAFC0448FE383EA418 /* jieba.modulemap */,
+				A52326D8D04D0DBDB1B1E1C4F8180D3C /* jieba.xcconfig */,
+				2EE5D746026DA7C0D9CB2D8E3A09CA36 /* jieba-dummy.m */,
+				CDCFCB1A9EBEEDFB1143DE46E0A6528D /* jieba-Info.plist */,
+				5161DC2FAD304BDFFD68A96BB6E01DF9 /* jieba-prefix.pch */,
+				52DF15B6E705DE8FACC987F63F6CFD10 /* jieba-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/jieba";
+			sourceTree = "<group>";
+		};
+		C35C21B611EEA8DC6B614190CB47E4DF /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				7A4A4E38E630FE5D691BE7E70FA1C1DB /* jieba.podspec */,
+				63E8765558544D43BC0A04D6B13C124A /* LICENSE */,
+				BD500807B5AD84E39AAAA9516E0D7DAE /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		C64E78E1DE88DA2228B24AE479B3118D = {
+			isa = PBXGroup;
+			children = (
+				1321FD01119D2255333F54C3FA507800 /* Frameworks */,
+				3954A6CF5F4EC8961B159EBBF6FF56B0 /* jieba */,
+				1A7623B648CC5916B52C1D09EF84968A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		53221DB1AF78F6FACF8C577B51BBF525 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C416C5E2491B003F50872994B78A36E /* ArgvContext.hpp in Headers */,
+				D3426C2EEFB6B7B57AB21AF39B1D5025 /* BlockingQueue.hpp in Headers */,
+				929A8A354E378317C5D67980A3360383 /* BoundedQueue.hpp in Headers */,
+				CF8C16CD1A2EF47742D1C56FC5EF5194 /* CastFloat.hpp in Headers */,
+				B3E29362A3FDAFF1A4220FEF39FD9DB6 /* Condition.hpp in Headers */,
+				6642845FE05D213BFFD3E8AC3A1F41F6 /* Config.hpp in Headers */,
+				A5ABAC8B749A7EB8CFB2A018F0639213 /* DictTrie.hpp in Headers */,
+				5F0AF03703C05C7A8A320A788D01F709 /* FullSegment.hpp in Headers */,
+				A3BB399E67DF49D86570262076689187 /* HandyMacro.hpp in Headers */,
+				D325515B55CF70D20DCEA44A4AE6036E /* HMMSegment.hpp in Headers */,
+				E4B9DE3859C358E33714229E0385E6AF /* InitOnOff.hpp in Headers */,
+				DD832164B0205E7CA02DC689CCBE04D8 /* ISegment.hpp in Headers */,
+				5019E315480CFF542AF100F4E3D54658 /* jieba-umbrella.h in Headers */,
+				54D7A8805B593BC81B9951DFEE400BAA /* KeywordExtractor.hpp in Headers */,
+				D8538B3293F5C5E429A68423126B69BC /* LocalVector.hpp in Headers */,
+				0AA4C93403B2ED14223CE5F307A67377 /* Logger.hpp in Headers */,
+				FCE4845622E9D3F67E389E5038008467 /* Md5.hpp in Headers */,
+				640CCEBAFD999ED62F1B5D13B1F3C2F3 /* MixSegment.hpp in Headers */,
+				94AD3758A1DE523387308E6B33262236 /* MPSegment.hpp in Headers */,
+				629448FB9804ADAF732E01133D834F55 /* MutexLock.hpp in Headers */,
+				F0615E74D0C13E27C7D6BEFE255D4E30 /* MysqlClient.hpp in Headers */,
+				C3D4B96B2FD720C89E827C022FDE89E5 /* NonCopyable.hpp in Headers */,
+				38016501727AC321AE1912B73A1CF913 /* PosTagger.hpp in Headers */,
+				1ECBDFCB190E0CBAA72C5E27416B8E05 /* QuerySegment.hpp in Headers */,
+				ADC3FA6354246943644C01CF4646567A /* SegmentBase.hpp in Headers */,
+				67BEC1E2A9F4852666C4488C1AD241AC /* Segmentor.h in Headers */,
+				88081116897CAC58998EF5F82D8A8622 /* StdExtension.hpp in Headers */,
+				40EB37DA1B140461805EE03BDE35D416 /* StringUtil.hpp in Headers */,
+				CFAA327AE6F71BC1E208082EF012F79D /* Thread.hpp in Headers */,
+				9AAC4AA9333B19140683745F3A0E8618 /* ThreadPool.hpp in Headers */,
+				E67A4273C88CCB921EB115A5ADE63F31 /* TransCode.hpp in Headers */,
+				63AE53A917DB9011D272C62DD972238C /* Trie.hpp in Headers */,
+				ABB5CC90AE81E76DDE3B1CAAFF51E268 /* WBJieba.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		14E09C83A548E412D8FB40C47CC54DFC /* jieba */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1C8FE634DF75A477C85097BD0666A46 /* Build configuration list for PBXNativeTarget "jieba" */;
+			buildPhases = (
+				53221DB1AF78F6FACF8C577B51BBF525 /* Headers */,
+				359CFE147FC2548A54D4820E4B2EEF4E /* Sources */,
+				77C95CB45493FDFFC63F16BA8AE664C4 /* Frameworks */,
+				9C327C52AFC27EC3265AE6D23548B0EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = jieba;
+			productName = jieba;
+			productReference = 5E8672164FD76E6424CB6E1FFE8E0BAE /* jieba.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		451F017B21C518D5809CFAD9B2FA3295 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 66AC6A87353682BDB47492F3A57EA3F6 /* Build configuration list for PBXProject "jieba" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C64E78E1DE88DA2228B24AE479B3118D;
+			productRefGroup = 1A7623B648CC5916B52C1D09EF84968A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				14E09C83A548E412D8FB40C47CC54DFC /* jieba */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9C327C52AFC27EC3265AE6D23548B0EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53B15950656E1E81DF521DADB39EFF8D /* iosjieba.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		359CFE147FC2548A54D4820E4B2EEF4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E943656AAB662DA56E4B09C4AA5F90F1 /* jieba-dummy.m in Sources */,
+				149543D751BD3F191CE8F8ED0BF676E3 /* Segmentor.cpp in Sources */,
+				4C4898148CB9C1EB4122CC2D79F80391 /* WBJieba.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1B52E9E63834A29BF23C3AEDD0482090 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A52326D8D04D0DBDB1B1E1C4F8180D3C /* jieba.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/jieba/jieba-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/jieba/jieba-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/jieba/jieba.modulemap";
+				PRODUCT_MODULE_NAME = jieba;
+				PRODUCT_NAME = jieba;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		74786CA4C97529D6A2415DD6F6F7A2FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		AA30B96A26D9035783DF5AB9C001D450 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A52326D8D04D0DBDB1B1E1C4F8180D3C /* jieba.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/jieba/jieba-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/jieba/jieba-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/jieba/jieba.modulemap";
+				PRODUCT_MODULE_NAME = jieba;
+				PRODUCT_NAME = jieba;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F398A296CFB5B192FA8B06471E79FEAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		66AC6A87353682BDB47492F3A57EA3F6 /* Build configuration list for PBXProject "jieba" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74786CA4C97529D6A2415DD6F6F7A2FC /* Debug */,
+				F398A296CFB5B192FA8B06471E79FEAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1C8FE634DF75A477C85097BD0666A46 /* Build configuration list for PBXNativeTarget "jieba" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B52E9E63834A29BF23C3AEDD0482090 /* Debug */,
+				AA30B96A26D9035783DF5AB9C001D450 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 451F017B21C518D5809CFAD9B2FA3295 /* Project object */;
+}

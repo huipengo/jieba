@@ -1,0 +1,16 @@
+PODS:
+  - jieba (0.1.0)
+
+DEPENDENCIES:
+  - jieba (from `../`)
+
+EXTERNAL SOURCES:
+  jieba:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  jieba: 96f833409e575abea28775c303a2dce875677f7b
+
+PODFILE CHECKSUM: 53578227dc264e51062c2d79635a77a7e4be40b6
+
+COCOAPODS: 1.7.5
